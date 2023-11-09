@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="booking-confirmed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed</title>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="container"> 
+            <div class="logo">
+                <img src="uow.png" alt="uow">
+            </div>
+            <nav class="prinav">
+                <ul role="list" class="navlist">
+                    <li><a href="https://www.uow.edu.au/about/welcome/"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="https://www.uow.edu.au/about/"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a href="https://www.uow.edu.au/alumni/contact-faq/"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                    <li><a href="https://www.sim.edu.sg/contact-us"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                    <li><a href="https://www.sim.edu.sg/contact-us#campus-locations-directions"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="background">
+        <img class="payment" src="payment.jpg" alt="bg image" height="835" width="1950">
+        <div class="booking">
+            <h1 class="booking-confirmed">Booking Confirmed</h1>
+            <div class="booking-detailsbg">
+                <div class="booking-pg">
+                    <p class="booking-details">Booking Details</p>
+                    <div class="dotted"></div>
+                    <div class="details">
+                        <div class="same">Room:
+                            <p class="room-money-date">Room 4</p>
+                        </div>
+                        <div class="same">Time:
+                            <p class="room-money-date">28/11/2023</p>
+                            <p class="time-time">12.00pm-2.00pm</p>
+                        </div>
+                        <div class="same">Total:
+                            <p class="room-money-date">$15</p>
+                        </div>
+                        <div class="vertical-line"></div>
+                        <div class="vertical-line1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <button class="submit" id="login-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const nextButton = document.getElementById("login-btn");
+        nextButton.addEventListener("click", function() {
+            window.location.href = "student-interface.html";
+        });
+    </script>
+</body>
+</html>

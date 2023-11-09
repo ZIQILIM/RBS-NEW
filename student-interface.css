@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    }
+    
+    nav{
+    height: 80px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(68,133,208);
+    } 
+    
+    nav img{
+    
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 5%;
+    }
+    
+    nav ul{
+    float: right; 
+    margin-right: 90px;
+    }
+    
+    nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    }
+    
+    nav li a{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    }
+
+    .background{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blur1{
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        position: absolute;
+        width: 960px;
+        height: 883px;
+        top: 80px;
+        padding: 30px;
+    }
+
+    .blur2{
+        backdrop-filter: blur(10px);
+        padding: 30px;
+        position: absolute;
+        width: 960px;
+        height: 883px;
+        top: 80px;
+    }
+
+    .left{
+        object-fit: cover;
+    }
+
+    .right{
+        object-fit: cover;
+    }
+
+    .left-button{
+        background-color: darkblue;
+        color: white;
+        padding: 10px;
+        margin-left: 350px;
+        margin-top: 300px;
+        cursor: pointer;
+    }
+    

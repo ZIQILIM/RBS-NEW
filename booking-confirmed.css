@@ -1,0 +1,180 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.primary-header{
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(68,133,208);
+    height: 8rem;
+    width: 100%;
+    font-family: normal, Sans-serif;
+}
+
+.logo{
+    width: 10rem;
+    padding-top: 2.3rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+.navlist{
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 85rem;
+    margin-top: -5.4rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.booking{
+  background-color: white;
+  width: 1200px;
+  height: 600px;
+  position: absolute;
+  top: 230px;
+  left: 350px;
+}
+
+.booking-confirmed{
+  margin-left: 450px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.booking-detailsbg{
+  background-color: rgb(180, 177, 177);
+  width: 640px;
+  height: 350px;
+  margin-left: 280px;
+}
+
+.booking-details{
+  margin-left: 231px;
+  font-size: 21px;
+  font-weight: bold;
+  top: 45px;
+  position: relative;
+}
+  
+.dotted{
+  border-bottom-style: dotted;
+  position: relative;
+  margin-top: 50px;
+  border-bottom-color: green;
+  width: 550px;
+  margin-left: 43px;
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.same{
+  margin-top: 40px;
+}
+
+.room-money-date{
+  margin-top: 20px;
+}
+
+.vertical-line{
+  border-left: 2px dotted #000;
+  height: 200px;
+  position: absolute;
+  left: 460px;
+  top: 200px;
+}
+
+.vertical-line1{
+  border-left: 2px dotted #000;
+  height: 200px;
+  position: absolute;
+  left: 730px;
+  top: 200px;
+}
+
+.submit {
+  background-color: rgb(66, 66, 252);
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 9%;
+  cursor: pointer;
+  position: relative;
+  left: 540px;
+  top: 50px;
+}
+ 

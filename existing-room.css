@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    }
+    
+    nav{
+    height: 80px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(68,133,208);
+    } 
+    
+    nav img{
+    
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 5%;
+    }
+    
+    nav ul{
+    float: right; 
+    margin-right: 90px;
+    }
+    
+    nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    }
+    
+    nav li a{
+    position: relative;
+    color: black;
+    font-size: 18px;
+    }
+    
+    body {
+    background-color:white;
+    color: black;
+    }
+    
+    h1 {
+    background-color: black;
+    color: white;
+    }
+    
+    .existingrooms{
+    text-align: center;
+    font-family: normal, Sans-serif;
+    font-size: 60px;
+    font-weight: 550;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    
+    }
+    
+    div{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;
+    color:white;
+    border-radius: 5px;
+    }
+    
+    .roomname{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    margin-left: 0rem;
+    }
+    
+    .select{
+    border: none;
+    }
+
+    .location{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    }
+    
+    .maxcapacity {
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    }
+    
+    .availablefrom{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    }
+    
+    .openinghours{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    }
+    
+    .closinghours{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    }
+    
+    .price{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    }
+    
+    .promotionalcode{
+    text-shadow: 0 0 3px #0b0909, 0 0 5px #0b0b0c; 
+    font-size: 30px;
+    } 
+    
+    .flatpickr-calendar {
+    font-family: sans-serif;
+    }
+    
+    div {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    }
+    
+    input[type="text"] {
+    font-size: 14px;
+    }
+    
+    input[type="text"][readonly] {
+    border: 2px solid rgba(0,0,0,0);
+    }
+    
+    .wrapper{
+    margin: 0 auto;
+    width: 1000px;
+    }
+
+    .select{
+        margin-left: 2rem;
+        margin-top: -0.4rem;
+    }
+
+    .rn{
+        margin-left: -12.5rem;
+    }

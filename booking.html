@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="container"> 
+            <div class="logo">
+                <img src="uow.png" alt="uow">
+            </div>
+                <nav class="prinav">
+                    <ul role="list" class="navlist">
+                        <li><a href="https://www.uow.edu.au/about/welcome/"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="https://www.uow.edu.au/about/"><i class="fa-solid fa-address-card"></i> About</a></li>
+                        <li><a href="https://www.uow.edu.au/alumni/contact-faq/"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        <li><a href="https://www.sim.edu.sg/contact-us"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                        <li><a href="https://www.sim.edu.sg/contact-us#campus-locations-directions"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div class="mainpage">
+        <div class="roombooking">
+            <h1 class="rb">Room Booking</h1>
+        </div>
+        <div class="background">
+            <img class="images" src="tech.jpg" alt="bg image" height="700" width="1950">
+        </div>
+        <div class="bigbox">
+            <div class="box1">
+               <div class="newbooking">
+                <p class="new-booking-details">New booking Details</p>
+               </div>
+               <div class="row1">
+                <p>Student ID:</p>
+                <input class="id" type="text" placeholder="">
+               </div>
+               <div class="row1">
+                <p>Name:</p>
+                <input class="id1" type="text" placeholder="">
+               </div>
+               <div class="row1">
+                <p>Contact:</p>
+                <input class="id2" type="text" placeholder="">
+               </div>
+               <div class="row1">
+                <p>Email:</p>
+                <input class="id3" type="text" placeholder="">
+               </div>
+            </div>
+            <div class="box1">
+                <div class="newbooking">
+                    <span class="payment">Payment:</span>
+                    <span id="price-value">100</span>
+                </div>
+                <div class="row1">
+                    <p>Promo code:</p>
+                    <input class="id" type="text" id="promo-input" placeholder="">
+                </div>
+                <div class="row1">
+                    <p id="error-popup"></p>
+                </div>
+                   <button class="confirm2" onclick="enterPromoCallback()" >Confirm Promocode</button>
+            </div>
+            <div class="box1">
+                <div class="newbooking">
+                    <p class="new-booking-details">Card Details</p>
+                   </div>
+                   <div class="row1">
+                    <p>Card Number:</p>
+                    <input class="id7" type="text" placeholder="">
+                   </div>
+                   <div class="row1">
+                    <div class="expiry">
+                        <p>Expiry Date</p>
+                        <div class="mmyy">
+                            <p>(MM/YY)</p>
+                        </div>
+                    </div>
+                    <input class="id4" type="text" placeholder="">
+                   </div>
+                   <div class="row1">
+                    <p>CVV:</p>
+                    <input class="id5" type="text" placeholder="">
+                   </div>
+                   <div class="row1">
+                    <p>Name on Card:</p>
+                    <input class="id6" type="text" placeholder="">
+                   </div>
+                   <button class="confirmation" id="confirmationButton">CONFIRM</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="index1.js"></script>
+</html>

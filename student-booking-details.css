@@ -1,0 +1,332 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.primary-header{
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(68,133,208);
+    height: 8rem;
+    width: 100%;
+    font-family: normal, Sans-serif;
+}
+
+.logo{
+    width: 10rem;
+    padding-top: 2.3rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+}
+
+.navlist{
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 80rem;
+    margin-top: -5.4rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.background{
+    background-color: rgba(127,200,255,0.5);
+    font-family: normal, Sans-serif;
+    position: relative;
+    width: 1920px;
+    height: 59.5rem;
+}
+
+.details{
+    position: absolute;
+    margin-left: 95rem;
+    margin-top: 17rem;
+}
+
+.whitebox{
+    background-color: white;
+    height: 20rem;
+    width: 18rem;
+    outline: 1px solid black;
+}
+
+#id, #name, #time, #total{
+    width: 10rem;
+}
+
+.id,.name,.time,.total{
+    padding-bottom: 2rem;
+}
+
+.id{
+    margin-left: 1.2rem;
+    padding-top: 1rem;
+}
+
+.name{
+    margin-left: 3.3rem;
+}
+
+.time{
+    margin-left: 3.7rem;
+}
+
+.detailbtn{
+    border: none;
+    color: white;
+    background-color: rgb(5,0,151);
+    margin-left: 10rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.total{
+    margin-left: 3.7rem;
+}
+
+.selection{
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+}
+
+.heading{
+    position: absolute;
+    margin-left: 49.5rem;
+    margin-top: 10rem;
+}
+
+.headingbtn{
+    display: flex;
+    gap: 25rem;
+    margin-left: -3rem;
+    margin-top: -2rem;
+}
+
+.table{
+    margin-top: 15rem;
+    margin-left: 32.5rem;
+    position: absolute;
+    text-align: center;
+}
+
+.price{
+    background-color: white;
+    width: 7rem;
+    height: 2rem;
+    text-align: center;
+    position: absolute;
+    margin-top: 54rem;
+    margin-left: 32.5rem;
+    padding-top: 0.3rem;
+    border: 1px solid black;
+}
+
+.row1{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+    
+}
+
+.row2{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row3{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row4{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row5{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row6{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row7{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row8{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row9{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row10{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row11{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row12{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row13{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+.row14{
+    display: table-cell;
+    background-color: white;
+    height: 2.5rem;
+    width: 7rem;
+    border: 1px solid black;
+}
+
+#green{
+    background-color: rgba(111,255,140,0.5);
+}
+
+.editbtn{
+    position: absolute;
+    border: none;
+    color: white;
+    background-color: rgb(5,0,151);
+    margin-left: 21.5rem;
+    margin-top: -41rem;
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.confirmbtn{
+    position: absolute;
+    border: none;
+    color: white;
+    background-color: rgb(5,0,151);
+    margin-left: 20rem;
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 2rem;
+    cursor: pointer;
+}

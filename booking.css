@@ -1,0 +1,247 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.primary-header{
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(68,133,208);
+    height: 8rem;
+    width: 100%;
+    font-family: normal, Sans-serif;
+}
+
+.logo{
+    width: 10rem;
+    padding-top: 2.3rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+   
+}
+
+.navlist{
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 85rem;
+    margin-top: -5.4rem;
+    font-size: 1.2rem;
+    
+}
+
+.rb{
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 42%;
+}
+
+.images{
+    display: flex;
+    flex: row;
+}
+
+.bigbox{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 263px;
+    display: flex;
+    flex-direction: row;
+    justify-content: middle;
+    align-items: center;
+}
+
+.box1{
+    background-color: white;
+    width: 320px;
+    height: 450px;
+    margin-left: 5px;
+    position: relative;
+    left: 25%;
+}
+
+.new-booking-details{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.id{
+    width: 130px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.row2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.id1{
+    width: 130px;
+    height: 20px;
+    margin-left: 36px;
+}
+
+.id2{
+    width: 130px;
+    height: 20px;
+    margin-left: 23px;
+}
+
+.id3{
+    width: 130px;
+    height: 20px;
+    margin-left: 34px;
+}
+
+.confirm{
+    margin-top: 50px;
+    width: 100px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.payment{
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+}
+
+.confirm2{
+    margin-top: 250px;
+    width: 100px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+.id4{
+    width: 130px;
+    height: 20px;
+    margin-left: 48px;
+}
+
+.id5{
+    width: 130px;
+    height: 20px;
+    margin-left: 90px;
+}
+
+.id6{
+    width: 130px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.id7{
+    width: 130px;
+    height: 20px;
+    margin-left: 34px;
+}
+
+.confirm3{
+    margin-top: 43px;
+    width: 100px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.mmyy{
+    font-size: 10px;
+}
+
+.confirmation{
+  margin-top: 100px;
+  margin-left: 90px;
+  border-style: none;
+  background-color: rgb(204, 145, 17);
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}

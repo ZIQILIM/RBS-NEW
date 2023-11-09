@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Room Booking System</title>
+<link rel="stylesheet" href="existing-room.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+<nav>
+    <div class="top">
+        <img src="uow.png">
+    </div>
+    <ul>
+        <li><a href="staff-interface.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="https://www.uow.edu.au/about/"><i class="fa-solid fa-address-card"></i> About</a></li>
+        <li><a href="https://www.uow.edu.au/alumni/contact-faq/"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+        <li><a href=https://www.sim.edu.sg/contact-us><i class="fa-solid fa-envelope"></i> Email</a></li>
+        <li><a href="https://www.sim.edu.sg/contact-us#campus-locations-directions"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+    </ul>
+</nav> 
+<div class="wrapper"> 
+<div class="existingrooms">Existing Rooms</div>
+<style>
+    body {
+        background-image: url("room.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 78% 78%;
+        background-position: center;
+    }
+    </style>
+    <!doctype html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <title>Modern Form</title>
+    <style>
+    label{display:block;}
+    form input{border:none;outline:none;box-sizing:border-box;}
+    form.invert input{border:1px solid rgba(0,0,0,0.2);outline:none;}
+    
+        form>button:nth-of-type(1){
+        color:green;display:none;
+        }
+        form>button:nth-of-type(2){
+        color:red;display:none;
+        }
+        form>button:nth-of-type(3){
+        color:black;display:inline-block;
+        }
+        form.invert>button:nth-of-type(1){
+        display:inline-block;
+        }
+        form.invert>button:nth-of-type(2){
+        display:inline-block;
+        }
+        form.invert>button:nth-of-type(3){
+        display:none;
+        }
+        </style>
+        <script>
+        (function(W){
+        var D,form,bts,ipt;
+        function init(){
+            D=W.document,previous=[];
+            form=D.getElementsByTagName('form')[0];
+            bts=form.getElementsByTagName('button');
+            ipt=form.getElementsByTagName('input');
+            form.addEventListener('submit',save,false);
+            bts[1].addEventListener('click',cancel,false);
+            bts[2].addEventListener('click',edit,false);
+        }
+        function save(e){
+            e.preventDefault();
+            form.classList.remove('invert');
+            var l=ipt.length;
+            while(l--){
+            ipt[l].readOnly=true;
+            };
+            previous=[];
+            //send your info here 
+        }
+        function edit(e){
+            e.preventDefault();
+            form.classList.add('invert');
+            var l=ipt.length;
+            while(l--){
+            previous[l]=ipt[l].value;
+            ipt[l].readOnly=false;
+            }
+        }
+        function cancel(e){
+            form.classList.remove('invert');
+            e.preventDefault();
+            var l=ipt.length;
+            while(l--){
+            ipt[l].value=previous[l];
+            ipt[l].readOnly=true;
+            }
+        }
+        W.addEventListener('load',init,false);
+        })(window)  
+        </script>
+
+    </head>
+    <body>
+    <form>
+    <div class="roomname">  
+    <label class="rn">Room name:</label>
+        <select class="select">
+            <option>Room 1</option>
+            <option>Room 2</option>
+            <option>Room 3</option>
+            <option>Room 4</option>
+        </select>
+    </div>
+    <div class="location"> 
+    <label>Location:<input type="text" size="30"></label>
+    </div>
+    <div class="maxcapacity"> 
+    <label>Max-capacity:<input type="text"></label>
+    </div>
+    <div class="availablefrom"> 
+    <label>Available from:<input type="availablefrom" name="available from" ></label>
+    </div>
+    <div class="openinghours"> 
+    <label>Opening hours:<input type="openinghours" name="openinghours" ></label>
+    </div>
+    <div class="closinghours"> 
+    <label>Closing hours:<input type="closinghours" name="closinghours" ></label>
+    </div>
+    <div class="price"> 
+    <label>Price:<input type="text"></label>
+    </div>
+    <div class="promotionalcode"> 
+    <label>Promotional code:<input type="text"></label>
+    </div> 
+    <button>Confirm</button><button>Cancel</button><button>Edit</button>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+    config = {
+enableTime: true,
+dateFormat: "Y-m-d H:i",
+altInput: true,
+altFormat: "F j, Y (H:i)"
+}
+    flatpickr("input[type=availablefrom]", config);
+</script>
+
+<script>
+    config2 = {
+enableTime: true,
+noCalendar: true,
+dateFormat: "H:i",
+}
+
+flatpickr("input[type=openinghours]", config2);
+flatpickr("input[type=closinghours]", config2);
+    </script>
+</form>
+</body>
+</div>
+</html> 

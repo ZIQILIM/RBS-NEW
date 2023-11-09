@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="launch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="container"> 
+            <div class="logo">
+                <img src="uow.png" alt="uow">
+            </div>
+                <nav class="prinav">
+                    <ul role="list" class="navlist">
+                        <li><a href="https://www.uow.edu.au/about/welcome/"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li><a href="https://www.uow.edu.au/about/"><i class="fa-solid fa-address-card"></i> About</a></li>
+                        <li><a href="https://www.uow.edu.au/alumni/contact-faq/"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        <li><a href="https://www.sim.edu.sg/contact-us"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                        <li><a href="https://www.sim.edu.sg/contact-us#campus-locations-directions"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+<body>
+    <div class="background">
+        <div class="backgroundbutton">
+            <button onclick="showgrey1()" class="bb1" type="button">Launch Room</button>
+            <button onclick="showgrey2()" class="bb2" type="button">Delist Room</button>
+        </div>
+        <div class="grey1" id="grey1">
+            <div class="ingrey1">
+                <div class="top">
+                    <img class="img1" src="room.jpg">
+                    <div class="name">
+                        <p class="room1">Room Name: ROOM 1</p>
+                        <p class="location">Location: UOW Campus - Block B Level 1</p>
+                        <p class="date">Available From: 08/10/2023</p>
+                        <p class="time">Opening hours: 8:00am - 8:00pm</p>
+                    </div>
+                    <div class="buttontop">
+                        <button onclick="confirmLaunch('room-launch.html')" class="button1">LAUNCH</button>
+
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <img class="img2" src="room.jpg">
+                    <div class="name1">
+                        <p class="morning">Room Name: ROOM 2</p>
+                        <p class="location2">Location: UOW Campus - Library Level 2</p>
+                        <p class="date1">Available From: 11/10/2023</p>
+                        <p class="time1">Opening hours 8:00am - 6:00pm</p>
+                    </div>
+                    <div class="buttontop">
+                        <button onclick="confirmLaunch('room-launch.html')" class="button2" type="button">LAUNCH</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grey2" id="grey2">
+            <div class="ingrey2">
+                <div class="top1">
+                    <img class="img11" src="room.jpg">
+                    <div class="name1">
+                        <p class="room11">Room Name: ROOM 1</p>
+                        <p class="location1">Location: UOW Campus - Block B Level 1</p>
+                        <p class="date11">Available From: 08/10/2023</p>
+                        <p class="time11">Opening hours: 8:00am - 8:00pm</p>
+                    </div>
+                    <div class="buttontop">
+                        <button onclick="confirmCancellation();" class="button3" type="button">DELIST</button>
+                    </div>
+                </div>
+
+                <div class="bottom1">
+                    <img class="img22" src="room.jpg">
+                    <div class="name12">
+                        <p class="morning2">Room Name: ROOM 2</p>
+                        <p class="location2">Location: UOW Campus - Library Level 2</p>
+                        <p class="date22">Available From: 11/10/2023</p>
+                        <p class="time22">Opening hours 8:00am - 6:00pm</p>
+                    </div>
+                    <div class="buttontop1">
+                        <button onclick="confirmCancellation2();" class="button4" type="button">DELIST</button>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function confirmLaunch(destination) {
+                    if (confirm("Are you sure you want to launch this room?")) {
+                        window.location.href = destination;
+                    }
+                }
+            </script>
+
+
+    </div>
+    <script src="launch.js"></script>
+</body>
+</html>

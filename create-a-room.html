@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Room Booking System</title>
+        <link rel="stylesheet" href="create-a-room.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="top">
+                <img src="uow.png">
+            </div>
+            <ul>
+                <li><a href="staff-interface.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="https://www.uow.edu.au/about/"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li><a href="https://www.uow.edu.au/alumni/contact-faq/"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                <li><a href=https://www.sim.edu.sg/contact-us><i class="fa-solid fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.sim.edu.sg/contact-us#campus-locations-directions"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+            </ul>
+        </nav> 
+        <div class="createaroom">Create a Room</div>
+        <style>
+            body {
+              background-image: url("room.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 82% 84%;
+              background-position: center;
+            }
+            </style>
+            <form>
+            <div class="roomname">
+                <label for="roomname">Room Name:</label><br>
+                <input type="roomname" name="roomname" size="30px">
+            </div>
+            <div class="location">
+                <label for="location">Location:</label><br>
+                <input type="location" name="location" size="30px">
+            </div>
+            <div class="maxcapacity">
+                <label for="maxcapacity">Max-capacity:</label><br>
+                <input type="maxcapacity" name="maxcapacity" >
+            </div>
+            <div class="availablefrom">
+                <label for="availablefrom">Available from:</label><br>
+                <input type="availablefrom" name="available from" >
+            </div>
+            <div class="openinghours">
+                <label for="openinghours">Opening hours:</label><br>
+                <input type="openinghours" name="openinghours" >
+            </div>
+            <div class="closinghours">
+                <label for="closinghours">Closing hours:</label><br>
+                <input type="closinghours" name="closinghours" >
+            </div>
+            <div class="price">
+                <label for="price">Price:</label><br>
+                <input type="price" name="price" >
+            </div>
+            <div class="promotionalcode">
+                <label for="promotionalcode">Promotional code:</label><br>
+                <input type="promotionalcode" name="promotionalcode" >
+
+            <div class="confirm-btn">
+                <input type="submit" name="confirm-btn" value="Confirm">
+            </div>
+        </div>
+        </form>
+        <script src="confirm.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+     
+        <script>
+            config = {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    altInput: true,
+    altFormat: "F j, Y (H:i)"
+}
+            flatpickr("input[type=availablefrom]", config);
+        </script>
+       
+       <script>
+           config2 = {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "H:i",
+}
+
+        flatpickr("input[type=openinghours]", config2);
+        flatpickr("input[type=closinghours]", config2);
+            </script>
+    </body>
+</html> 
