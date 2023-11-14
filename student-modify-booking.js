@@ -26,7 +26,7 @@ confirmButton.addEventListener('click', function () {
 
         if (userConfirmed) {
             isConfirmed = true;
-            window.location.href = 'booking.html';
+            window.location.href = 'student-existingbooking-view.html';
         }
     }
 });
